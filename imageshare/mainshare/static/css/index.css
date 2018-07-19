@@ -1,0 +1,128 @@
+body{
+  background-color: #222;
+  color: white;
+}
+legend{
+  color: white;
+  font-size: 20pt;
+}
+#browse{
+  padding-top: 20px;
+}
+.logo{
+  max-width: 100%;
+  max-height: 100%;
+  margin: auto;
+}
+.navbar-brand{
+  padding: 4px 4px;
+}
+.navbar{
+  margin-bottom: 0;
+}
+.center{
+  padding-top: 4px;
+}
+.splash{
+  background-attachment: fixed;
+  background-size: cover;
+  background-image: url('../img/splash.jpg');
+  height:60vh
+}
+.text{
+  vertical-align: middle;
+  font-size: 33pt;
+  padding-top: 25vh;
+  text-align: center;
+  color: #ffffff;
+  font-family: 'Libre Baskerville', serif;
+}
+.text>button{
+  font-size: 17pt;
+}
+.linkmain:hover,.linkmain{
+  color: inherit;
+}
+.fixcolor{
+  color: #DDD;
+  background-color: #333C;
+  margin-top: 0;
+}
+.catpreview{
+  background-size: cover;
+  background-position: center;
+  text-align: center;
+  height: 150px;
+  cursor: pointer;
+  padding: 0;
+}
+.catpreview>h2{
+  visibility: hidden;
+}
+.publication{
+  background-size: contain;
+}
+.padder{
+  padding: 5px;
+}
+.nopad{
+  padding: 0;
+}
+.images {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.image {
+  flex: 25%;
+  max-width: 25%;
+  padding: 0 4px;
+}
+
+.image img {
+  margin-top: 8px;
+  vertical-align: middle;
+}
+
+@media screen and (max-width: 1024px) {
+  .image {
+    flex: 50%;
+    max-width: 50%;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .image {
+    flex: 100%;
+    max-width: 100%;
+  }
+}
+.galleryitem{
+  cursor: pointer;
+}
+.galleryitem:hover{
+
+}
+.modal {
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+.imagemodal{
+  max-height: 54vh;
+  max-width: 100%;
+  margin: auto;
+}
+.modal-content{
+  background-color: #333E;
+}
+#imagelink{
+  background-color: #333C;
+  color: white;
+  border: #000;
+  width: 300px;
+  display: inline;
+}
+p{
+  font-family: 'PT Sans', sans-serif;
+  font-size: 15pt;
+}
