@@ -25,5 +25,16 @@ class Image(models.Model):
     submited = models.DateTimeField(auto_now_add=True)
     image = models.ImageField(upload_to = 'images/')
 
+    @classmethod
+    def search_image(cls,key):
+        images = cls.objects.filter(cls(description__contains = key)|cls(Name__icontains = key)|cls(location__place__icontains = key))
+        print(images)
+        return images
+
+    @classmethod
+    def search_by_title(cls,search_term):
+        news = cls.objects.filter(title__icontains=search_term)
+        return news
+
     class Meta:
         ordering = ['submited']
