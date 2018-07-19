@@ -37,6 +37,7 @@ class Image(models.Model):
         info={
             'name':self.Name,
             'desc':self.description,
+            'image':self.image.url,
             'id':self.id
         }
         return str(info)
