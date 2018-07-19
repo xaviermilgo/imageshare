@@ -2,6 +2,11 @@
 from __future__ import unicode_literals
 
 from django.db import models
+Deafult_desc = '''Lorem ipsum dolor sit amet,
+agam probatus indoctum cu quo.
+Est eu quod rationibus,
+nam platonem sententiae no.
+Eu mel vero oporteat elaboraret.'''
 class Category(models.Model):
     Name = models.CharField(max_length=30)
     @property
