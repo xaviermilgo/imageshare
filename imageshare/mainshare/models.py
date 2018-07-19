@@ -2,11 +2,13 @@
 from __future__ import unicode_literals
 
 from django.db import models
+
 Deafult_desc = '''Lorem ipsum dolor sit amet,
 agam probatus indoctum cu quo.
 Est eu quod rationibus,
 nam platonem sententiae no.
 Eu mel vero oporteat elaboraret.'''
+
 class Category(models.Model):
     Name = models.CharField(max_length=30)
     @property
@@ -29,6 +31,21 @@ class Image(models.Model):
     location = models.ForeignKey(Location)
     submited = models.DateTimeField(auto_now_add=True)
     image = models.ImageField(upload_to = 'images/')
+
+    def save_image(self):
+        self.save()
+
+    def delete_image(self):
+        self.delete()
+
+    def update_image(self,Name=None,category=None):
+        self.Name=Name if Name else self.Name
+        self.category=category if category else self.category
+        self.save()
+
+    @classmethod
+    def get_image_by_id(cls,id):
+        return cls.objects.get(pk = id)
 
     @classmethod
     def search_image(cls,key):
