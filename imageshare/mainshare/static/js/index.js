@@ -17,3 +17,9 @@ copyaction = ()=>{
 document.getElementById("imagelink").select();
 document.execCommand("Copy");
 }
+$('document').ready(()=>{
+  if (window.location.href.match(/.*#\d+/)){
+    id=window.location.href.match(/.*#(\d+)/)[1];
+    $('#image'+id).trigger('click');
+  }
+})
