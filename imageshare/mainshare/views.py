@@ -15,3 +15,10 @@ def search(request):
     name=searchstring
     title=name
     return render(request,'results.html',locals())
+
+def getcat(request,catid):
+    category=get_object_or_404(Category,pk = catid)
+    title=category.Name
+    name=category.Name
+    images=category.images.all()
+    return render(request,'results.html',locals())
