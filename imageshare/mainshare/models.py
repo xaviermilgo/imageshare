@@ -24,3 +24,6 @@ class Image(models.Model):
     location = models.ForeignKey(Location)
     submited = models.DateTimeField(auto_now_add=True)
     image = models.ImageField(upload_to = 'images/')
+
+    class Meta:
+        ordering = ['submited']
