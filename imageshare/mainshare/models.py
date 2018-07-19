@@ -32,6 +32,14 @@ class Image(models.Model):
     submited = models.DateTimeField(auto_now_add=True)
     image = models.ImageField(upload_to = 'images/')
 
+    @property
+    def allinfo(self):
+        info={
+            'name':self.Name,
+            'desc':self.description,
+            'id':self.id
+        }
+        return str(info)
     def save_image(self):
         self.save()
 
