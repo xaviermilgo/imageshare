@@ -13,3 +13,7 @@ showinfo = (i)=>{
   $("#imagelink").val(window.location.origin+'/#'+dict.id);
   $("#ImageModal").modal('show');
 }
+copyaction = ()=>{
+document.getElementById("imagelink").select();
+document.execCommand("Copy");
+}
