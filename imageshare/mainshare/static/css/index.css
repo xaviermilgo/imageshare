@@ -108,7 +108,7 @@ legend{
   transition: all 0.5s ease;
 }
 .imagemodal{
-  max-height: 54vh;
+  max-height: 50vh;
   max-width: 100%;
   margin: auto;
 }

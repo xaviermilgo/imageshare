@@ -10,6 +10,7 @@ showinfo = (i)=>{
   $('#imageimage').attr('src',dict.image);
   $('#imagedescription').text(dict.desc);
   $('#imagetitle').text(dict.name);
+  $('#imagedirectlink').attr('href',window.location.origin+dict.image)
   $("#imagelink").val(window.location.origin+'/#'+dict.id);
   $("#ImageModal").modal('show');
 }
