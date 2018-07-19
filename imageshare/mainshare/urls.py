@@ -6,4 +6,5 @@ from django.conf.urls.static import static
 urlpatterns = [
     url(r'^$',views.home),
     url(r'^search$',views.search),
+    url(r'^cat/(?P<catid>\d+)',views.getcat)
 ]
