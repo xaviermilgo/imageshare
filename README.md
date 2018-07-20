@@ -35,5 +35,5 @@ To access the Code behind this site, you will need to:
   ```
 
   ## Licensing
-  ###### This Project is under the MIT License 2017
+  ###### This Project is under the MIT License 2018
   ###### See more about this in the [License.md](https://github.com/reivhax/imageshare/blob/master/LICENSE.md) File
